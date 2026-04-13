@@ -17,7 +17,7 @@
 - car_Price
 - car_Km
 - car_Fuel_Type
-- car_Gear_Shift
+- is_Automatic
 - car_Optional
 - is_New
 
@@ -28,7 +28,7 @@
 - car_Model ( testo: VARCHAR(50), attributi: NOTNULL )
 - car_Image ( testo: VARCHAR(50), attributi: DEFAULT (http://Placeholder.boolean) )
 - car_Price (numero: DECIMAL(5,3), attributi: NOTNULL )
-- car_Km (testo: VARCHAR(10), attributi: NOTNULL ) 
+- car_Km (numero: DECIMAL (10,2), attributi: NOTNULL ) 
 - car_Fuel_Type (testo: VARCHAR(15), attributi: NOTNULL)
 - is_Automatic (numero: TINYINT (0), attributi: NOTNULL)
 - car_Optional (testo: VARCHAR(255), attributi: NULL)
