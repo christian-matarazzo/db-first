@@ -4,32 +4,32 @@
 # Iniziamo trovando il nome per la nostra tabella, in questo caso caso parliamo di automobili
 
 # TABLE NAME
-- cars_table
+- cars
 
 # Possiamo ora iniziare a definire che tipologia di informazioni sono necessarie nel nostro DB
 
 # DB INFOS
 
-- car_Id 
-- car_Brand
-- car_Model
-- car_Image
-- car_Price
-- car_Km
-- car_Fuel_Type
-- is_Automatic
-- car_Optional
-- is_New
+- id 
+- brand
+- model
+- image
+- price
+- km
+- fuel_type
+- is_automatic
+- optional
+- is_new
 
 # Trovati gli elementi fondamentali, procediamo a dargli una tipologia di dato 
 
-- car_Id (numero: INT - attributi: PRIMARY_KEY, AUTO_INCREMENT )
-- car_Brand ( testo: VARCHAR(50), attributi: NOTNULL )
-- car_Model ( testo: VARCHAR(50), attributi: NOTNULL )
-- car_Image ( testo: VARCHAR(50), attributi: DEFAULT (http://Placeholder.boolean) )
-- car_Price (numero: DECIMAL(5,3), attributi: NOTNULL )
-- car_Km (numero: DECIMAL (10,2), attributi: NOTNULL ) 
-- car_Fuel_Type (testo: VARCHAR(15), attributi: NOTNULL)
-- is_Automatic (numero: TINYINT (0), attributi: NOTNULL)
-- car_Optional (testo: VARCHAR(255), attributi: NULL)
-- is_New (numero: TINYINT(0), attributi: NOTNULL)
+- id (numero: INT - attributi: PRIMARY_KEY, AUTO_INCREMENT, NOTNULL, UNIQUE )
+- brand ( testo: VARCHAR(50), attributi: NOTNULL )
+- model ( testo: VARCHAR(50), attributi: NOTNULL )
+- image ( testo: VARCHAR(50), attributi: DEFAULT (http://Placeholder.boolean) )
+- price (numero: DECIMAL(5,3), attributi: NULL )
+- km (numero: DECIMAL (10,2), attributi: NULL ) 
+- fuel_type (testo: VARCHAR(15), attributi: NOTNULL)
+- is_automatic (numero: TINYINT (0), attributi: NOTNULL)
+- optional (testo: VARCHAR(255), attributi: NULL)
+- is_new (numero: TINYINT(0), attributi: NOTNULL)
